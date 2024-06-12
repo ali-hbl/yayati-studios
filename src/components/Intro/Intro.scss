@@ -1,0 +1,60 @@
+@use '/src/App.scss' as main;
+
+.intro-section {
+  padding: 3rem 2rem;
+  color: main.$color-blue;
+  text-align: center;
+  margin: 1rem auto;
+  max-width: 800px;
+
+  h1 {
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    color: main.$color-coral;
+  }
+
+  p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6;
+    margin-bottom: 0;
+    color: main.$color-blue;
+    text-align: justify;
+    text-justify: inter-word;
+  }
+
+  .highlight {
+    color: main.$color-green;
+    font-weight: bold;
+  }
+
+  .intro-content {
+    margin-top: 1rem;
+    text-align: left;
+
+    p {
+      margin-bottom: 1rem;
+    }
+
+    .intro-points {
+      margin-top: 1.5rem;
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+
+      div {
+        @include main.flex-center;
+        margin-bottom: 0.5rem;
+
+        span {
+          margin-left: 0.5rem;
+          font-size: 1rem;
+          color: main.$color-blue;
+        }
+      }
+    }
+  }
+}
