@@ -1,11 +1,9 @@
 import './Hero.scss';
 
 const Hero = () => {
-  const listItems = ['Songwriting & Composition', 'Recording & Producing', 'Lessons & Workshops', 'About Us'];
-
   return (
     <main className="hero">
-      <div className="hero-content">
+      {/* <div className="hero-content">
         <div className="hero-left">
           <h1 className="hero-title">Yayati Studios</h1>
           <p className="hero-description">We bring your artistic vision to life with top-notch production services.</p>
@@ -17,7 +15,7 @@ const Hero = () => {
             ))}
           </ul>
         </div>
-      </div>
+      </div> */}
     </main>
   );
 };
