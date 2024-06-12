@@ -1,12 +1,16 @@
+import { Fragment } from 'react';
 import { listItems } from '../../../lib/data';
 import './Categories.scss';
 
 const Categories = () => {
   return (
-    <div>
-      <ul className="hero-list">
+    <div className="categories-container">
+      <ul>
         {listItems.map((item, index) => (
-          <li key={index}>{item}</li>
+          <Fragment key={index}>
+            <li>{item.title}</li>
+            <p>{item.description}</p>
+          </Fragment>
         ))}
       </ul>
     </div>
