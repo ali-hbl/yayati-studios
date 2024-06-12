@@ -1,5 +1,5 @@
 import { Fragment } from 'react';
-import { listItems } from '../../../lib/data';
+import { listItems } from '../../lib/data';
 import './Categories.scss';
 
 const Categories = () => {
